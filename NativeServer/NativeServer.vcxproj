@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F63F10E9-AE9A-4EB5-B67F-F1E58395B93F}</ProjectGuid>
+    <RootNamespace>NativeServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\Ophir\Documents\Project\NativeServer\NativeServer\OpenCFU\processor\headers;D:\Ophir\Documents\Project\NativeServer\NativeServer\OpenCFU;D:\Ophir\Documents\Project\NativeServer\NativeServer;D:\Ophir\Documents\opencv\OpenCV3\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Ophir\Documents\opencv\OpenCV3\install\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>D:\Ophir\Documents\Project\NativeServer\NativeServer\OpenCFU\processor\src;D:\Ophir\Documents\Project\NativeServer\NativeServer;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PrecompiledHeader />
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Ophir\Documents\opencv\OpenCV3\install\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d300d.lib;opencv_core300d.lib;opencv_features2d300d.lib;opencv_flann300d.lib;opencv_hal300d.lib;opencv_highgui300d.lib;opencv_imgcodecs300d.lib;opencv_imgproc300d.lib;opencv_ml300d.lib;opencv_objdetect300d.lib;opencv_photo300d.lib;opencv_shape300d.lib;opencv_stitching300d.lib;opencv_superres300d.lib;opencv_ts300d.lib;opencv_video300d.lib;opencv_videoio300d.lib;opencv_videostab300d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CThread.h" />
+    <ClInclude Include="OpenCFU\defines.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\ContourFamily.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\ContourSpliter.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Features.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\MaskROI.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Predictor.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\ProcessingOptions.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Processor.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Result.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_1.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_2.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_3.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_4.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_BaseClass.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_ColourCluster.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_FiltGUI.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_FiltHS.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_FiltIPosition2D.hpp" />
+    <ClInclude Include="OpenCFU\processor\headers\Step_FiltLik.hpp" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="SocketListener.h" />
+    <ClInclude Include="SocketSender.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CThread.cpp" />
+    <ClCompile Include="NativeServer.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\ContourFamily.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\ContourSpliter.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Features.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\MaskROI.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Predictor.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\ProcessingOptions.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Processor.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Result.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_1.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_2.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_3.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_4.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_BaseClass.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_ColourCluster.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_FiltGUI.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_FiltHS.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_FiltIPosition2D.cpp" />
+    <ClCompile Include="OpenCFU\processor\src\Step_FiltLik.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="SocketListener.cpp" />
+    <ClCompile Include="SocketSender.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
